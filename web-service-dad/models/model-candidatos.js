@@ -1,0 +1,55 @@
+//model de dados do CANDIDATOS
+var mongoose = require('mongoose');
+
+var schemaCandidato = new mongoose.Schema({
+  DATA_GERACAO: {type: String },
+  HORA_GERACAO: {type: String },
+  ANO_ELEICAO: {type: Number },
+  NUM_TURNO: {type: Number },
+  DESCRICAO_ELEICAO: {type: String },
+  SIGLA_UF: {type: String },
+  SIGLA_UE: {type: Number },
+  DESCRICAO_UE: {type: String },
+  CODIGO_CARGO: {type: Number },
+  DESCRICAO_CARGO: {type: String },
+  NOME_CANDIDATO: {type: String },
+  SEQUENCIAL_CANDIDATO: {type: Number },
+  NUMERO_CANDIDATO: {type: Number },
+  CPF_CANDIDATO: {type: Number },
+  NOME_URNA_CANDIDATO: {type: Number },
+  COD_SITUACAO_CANDIDATURA: {type: Number },
+  DES_SITUACAO_CANDIDATURA: {type: String },
+  NUMERO_PARTIDO: {type: Number },
+  SIGLA_PARTIDO: {type: String },
+  NOME_PARTIDO: {type: String },
+  CODIGO_LEGENDA: {type: Number },
+  SIGLA_LEGENDA: {type: String },
+  COMPOSICAO_LEGENDA: {type: String },
+  NOME_LEGENDA: {type: String },
+  CODIGO_OCUPACAO: {type: Number },
+  DESCRICAO_OCUPACAO: {type: String },
+  DATA_NASCIMENTO: {type: String },
+  NUM_TITULO_ELEITORAL_CANDIDATO: {type: Number },
+  IDADE_DATA_ELEICAO: {type: Number },
+  CODIGO_SEXO: {type: Number },
+  DESCRICAO_SEXO: {type: String },
+  COD_GRAU_INSTRUCAO: {type: Number },
+  DESCRICAO_GRAU_INSTRUCAO: {type: String },
+  CODIGO_ESTADO_CIVIL: {type: Number },
+  DESCRICAO_ESTADO_CIVIL: {type: String },
+  CODIGO_COR_RACA: {type: Number },
+  DESCICAO_COR_RACA: {type: String },
+  CODIGO_NACIONALIDADE: {type: Number },
+  DESCRICAO_NACIONALIDADE: {type: String },
+  SIGLA_UF_NASCIMENTO: {type: String },
+  CODIGO_MUNICIPIO_NASCIMENTO: {type: Number },
+  NOME_MUNICIPIO_NASCIMENTO: {type: String },
+  DESPESA_MAX_CAMPANHA: {type: Number },
+  COD_SIT_TOT_TURNO: {type: Number },
+  DESC_SIT_TOT_TURNO: {type: String },
+  NM_EMAIL: {type: String }
+
+
+});
+
+module.exports = mongoose.model('Candidato', schemaCandidato);
